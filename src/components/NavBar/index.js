@@ -13,14 +13,14 @@ import {
 } from './NavBarElements'
 
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
   return (
     // "<>, </> are called fragments"
     <>  
       <Nav>
         <NavBarContainer>
           <NavLogo to='/'>Nikhil Raina</NavLogo>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
 

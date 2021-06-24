@@ -1,5 +1,4 @@
 import React from 'react'
-import { NavBtn, NavResumeBtnLink } from '../NavBar/NavBarElements'
 import {
   SideBarContainer,
   Icon,
@@ -11,18 +10,18 @@ import {
   SideBarMenu
 } from './SideBarElements'
 
-const Sidebar = () => {
+const Sidebar = ({isOpen, toggle}) => {
   return (
-    <SideBarContainer>
-      <Icon>
+    <SideBarContainer isOpen={isOpen} onclick={toggle}>
+      <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
       <SideBarWrapper>
         <SideBarMenu>
-          <SideBarLink to='about'>About</SideBarLink>
-          <SideBarLink to='discover'>Experience</SideBarLink>
-          <SideBarLink to='projects'>Projects</SideBarLink>
-          <SideBarLink to='contact'>Contact</SideBarLink>
+          <SideBarLink to='about' onclick={toggle}>About</SideBarLink>
+          <SideBarLink to='discover' onclick={toggle}>Experience</SideBarLink>
+          <SideBarLink to='projects' onclick={toggle}>Projects</SideBarLink>
+          <SideBarLink to='contact' onclick={toggle}>Contact</SideBarLink>
         </SideBarMenu>
         
         <SideBtnWrap>
