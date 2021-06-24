@@ -2,8 +2,15 @@ import styled from 'styled-components'
 import {Link as LinkRouter} from 'react-router-dom'
 import {Link as LinkScroll} from 'react-scroll'
 
+// var Brown_Dark = '#39332C';
+// var Black_Shade = '#1A1B1A';
+// var Brown_Light = '#635B53';
+// var Brown_Skin = '#9D9085';
+// var White_Off = '#F4F4F4';
+// var White = '#FFFFFF';
+
 export const Nav = styled.nav`
-  background: #000;
+  background: #1A1B1A;
   height: 80px;
   ${'' /* margin-top: -80px; */}
   display: flex;
@@ -79,10 +86,16 @@ export const NavLinks = styled(LinkScroll)`
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
+  font-size: 0.8rem;
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid #01bf71;
+    border-bottom: 3px solid #635B53;
+  }
+
+  &:hover {
+    color: #9D9085;
+    transition: 0.2s ease-in-out;
   }
 `;
 
@@ -107,9 +120,9 @@ export const NavResumeBtnLink = styled(LinkRouter) `
   transition: all 0.2s ease-in-out;
   text-decoration: none;
 
-  &.hover {
+  &:hover {
     transition: all 0.2s ease-in-out;
-    background: #fff;
+    background: #F4F4F4;
     color: #010606;
   }
 `

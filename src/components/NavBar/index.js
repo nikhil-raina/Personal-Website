@@ -19,7 +19,7 @@ const Navbar = () => {
     <>  
       <Nav>
         <NavBarContainer>
-          <NavLogo to='/'>[Insert Logo Here]</NavLogo>
+          <NavLogo to='/'>Nikhil Raina</NavLogo>
           <MobileIcon>
             <FaBars />
           </MobileIcon>
@@ -40,7 +40,7 @@ const Navbar = () => {
             </NavItem> 
           </NavMenu>
           <NavBtn>
-            <NavResumeBtnLink to="resume">Resume</NavResumeBtnLink>
+            <NavResumeBtnLink to="/resume">Resume</NavResumeBtnLink>
           </NavBtn>
         </NavBarContainer>
       </Nav>
