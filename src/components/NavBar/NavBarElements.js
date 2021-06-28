@@ -82,14 +82,15 @@ export const NavItem = styled.li`
 export const NavLinks = styled(LinkScroll)`
   color: #fff;
   display: flex;
-  align-tems: center;
+  align-items: center;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
-  font-size: 0.8rem;
+  ${'' /* would want to make it smaller later and put it below the title */}
+  font-size: 1rem;
   cursor: pointer;
 
-  &.active {
+  &:active {
     border-bottom: 3px solid #635B53;
   }
 
@@ -125,4 +126,4 @@ export const NavResumeBtnLink = styled(LinkRouter) `
     background: #F4F4F4;
     color: #010606;
   }
-`
+`;
